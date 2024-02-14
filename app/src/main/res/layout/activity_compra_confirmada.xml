@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f3fa"
+    tools:context=".CompraConfirmada">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LLEncabezado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="top" />
+
+            <TextView
+                android:id="@+id/lblCompraConfirmadaTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Compra Confirmada"
+                android:textAlignment="center"
+                android:textColor="#14213D"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/casilla_blanca"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgCompraConfirmada"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/descripcion"
+                    app:srcCompat="@mipmap/icono_compraconfirmada" />
+
+                <TextView
+                    android:id="@+id/lblCompraConfirmada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="¡SU COMPRA HA SIDO CONFIRMADA!"
+                    android:textAlignment="center"
+                    android:textColor="#14213D"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/lblCompraConfirmada2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Puede pasar a recoger sus productos dentro de 10 minutos en la sucursal que seleccionó."
+                    android:textAlignment="center"
+                    android:textColor="#4263AC"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnRegresarInicio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/casilla_logologinazul"
+                android:elevation="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:onClick="verConsultarTodo"
+                android:text="Regresar al Inicio"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
